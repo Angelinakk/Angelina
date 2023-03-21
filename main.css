@@ -1,0 +1,25 @@
+#navigacija {
+    text-align: center;
+   color: antiquewhite;
+    text-shadow: 4px 4px 2px rgb(119, 24, 24) ;
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+#tekst { 
+    color: antiquewhite;
+    font-size: larger;
+
+}
+#bodi {
+    background-color: black;
+}
+hr {
+    color: antiquewhite;
+}
+
+#quote {
+    color: antiquewhite;
+}
+   

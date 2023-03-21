@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body id="bodi">
+    <p id="quote"></p>
+    <button onclick="noviCitat()"> <b>Sadrzaj sajta</b></button>
+ <nav>
+<h1 id="navigacija"></h1>
+<hr>
+<img src="javascript.png" alt="JavaScript" width="1900" height="900">
+</nav>
+<hr>
+<h2 id="navigacija">Uvod</h2>
+<p id="tekst">JavaScript je interpretiran objektno orijentisan skriptovan jezik visokog nivoa. <br>
+     On se dominantno koristi pri izradi web stranica uz HTML i CSS <br>
+     JavaScript sadrzi biblioteku objekata kao sto su:</p>
+     <ul id="tekst">
+        <li>Niz</li>
+        <li>Datum</li>
+        <li>Matematika</li>
+        <li>Operatori</li>
+        <li>Kontrolne strukture</li>
+        <li>Iskazi</li>
+     </ul>
+     <p id="tekst">
+     DOM omogucava strukturni prikaz dokumenta i definise nacin kako se moze pristupiti <br>
+     iz programa i kako oni mogu promeniti njegov sadrzaj, stil i strukturu. <br>
+     Koriscenjem Document Object modela mogu da se unesu brojne promene na samoj stranici:</p>
+     <ul id="tekst">
+        <li>menjanje HTML elemenata; </li>
+        <li>promena CSS stilova;</li>
+        <li>uklanjanjanje HTML elemenata i atributa;</li>
+        <li>dodavanje novih HTML elemenata i atributa;</li>
+        <li>upravljanje dogadjajima;</li>
+        <li>kreiranje novih HTML dogadjaja.</li>
+     </ul> 
+    <hr>
+    <h2 id="navigacija">Sta vec treba da znate</h2>
+    <p id="tekst">Da bi nastavili sa citanjem i primenjivanjem sadrzaja ovog sajta neophodno je da imate znanje iz:
+    </p>
+    <ul id="tekst">
+        <li>Opsteg poznavanja interneta</li>
+        <li>Dobro poznavanja HTMLa</li>
+        <li>Malo iskustva u programiranju</li>
+    </ul>
+    <hr>
+    <h3 id="navigacija"> Hello world</h3>
+    <p id="tekst">
+        Zapocinjemo sa pisanjem Hello world tako sto cemo ispisati sledeci kod:<br>
+        function greetMe(yourName) { alert("Hello " + yourName); } <br>
+        greetMe("World");
+    </p>
+    <hr>
+    <h2 id="navigacija">Promenljive/varijable</h2>
+    <p id="tekst"> Koristimo varijable kao simbolicna imena koja nam pomazu da pristupimo sadrzaju te varijable.
+        Pravila vezana za nazive varijabla JavaScript-a su:</p>
+    <ul id="tekst">
+        <li>nazivi varijabli su osetljivi na veliko i malo slovo (s i S su dve drugačije varijable);</li>
+        <li>ime varijable može počinjati i znakom $ ili _</li>
+        <li>znakovi mogu da budu i cifre</li>
+    </ul>
+    <hr>
+    <h2 id="navigacija">Deklarisanje varijabli</h2>
+    <p id="tekst">Varijablu mozete deklarisati na tri nacina:</p>
+    <ul id="tekst">
+        <li>Uz rec var koja vazi u celom fajlu <br>
+            var x = 42.
+        </li>
+        <li>Jednostavnim dodeljivanjem vrednosti
+            к = 42.
+        </li>
+        <li>Uz kljucnu rec let koja vazi samo u bloku u kom je deklarisana <br>
+            let y = 13.
+        </li>
+    </ul>
+    <hr>
+    <h2 id="navigacija">Opsek varijabli</h2>
+    <p id="tekst">Deklarisana varijabla izvan funkcije zove se globalna promenljiva, jer de dostupna u celom dokumentu. <br>
+        Deklarisana varijabla unutar funkcije zove se lokalna promenljiva, jer je dostupna samo unutar te funkcije. <br>
+    </p>
+    <hr>
+    <h2 id="navigacija">Globalne varijable</h2>
+    <p id="tekst">Globalna varijabla je vrsta varijable koja je deklarirana izvan bilo koje funkcije <br>
+       i dostupna je svim funkcijama u programu. <br>
+       Globalni objekat je window tako da mozemo pristupiti globalnim promenljivim  <br>
+       koristeci window.variable syntax.</p>
+       <hr>
+       <h2  id="navigacija">Konstante</h2>
+       <p id="tekst">Koristite const za deklarisanje varijabli ako možete predvideti da ta varijabla <br>
+          neće dobijati drugu vrednost. Ako imate razloga da mislite <br>
+          da će nekad tokom njenog korištenja ta varijabla dobiti drugu vrednost <br>
+          koristite let ključnu reč. <br>
+          const PI = 3.14;<br>
+        *Ne mozete deklarisati konstantu sa istim imenom kao funkcija ili promenljivu  <br>
+        tom delu, to ne vazi za objekte.</p>
+        <hr>
+        <h2 id="navigacija">Tipovi podataka</h2>
+        <p id="tekst">
+            JavaScript ima sledeće tipove podataka:
+        </p>
+        <ul id="tekst">
+            <li>logička ili Bulova vrednost (boolean), može biti tačno (true) ili netačno (false)</li>
+            <li>null, koristi se da predstavi nepostojeću vrednost</li>
+            <li>undefined, za vrednost promenljivih koje su deklarisane ali im još nije dodeljena <br>
+                vrednost (i za povratnu vrednost funkcija koje ne vraćaju vrednost)</li>
+            <li>broj (number), može biti ceo ili decimalni</li>
+            <li>string sadrži znakove u navodnicima, npr. “Zdravo Svete”</li>
+            <li>simbol</li>
+            <li>object</li>
+        </ul>
+        <hr>
+        <h2 id="navigacija">if...else</h2>
+        <p id="tekst">
+            Koristite if naredbu da odaberete blok JavaScript koda koji ce se izvrsiti ako je uslov tacan. <br>
+            Mozete da koristite if else da biste testirali vise uslova u nizu. <br>
+            U slucaju visestrukih uslova bice izvrsen samoprvi logicki uslov koji je tacan <br>
+           </p>
+           <hr>
+       <h2 id="navigacija">while</h2>
+       <p id="tekst">
+        While izraz se izvršava sve dok je uslov TRUE, a ukoliko nije onda se izlazi iz petlje. <br>
+        Ovaj tip petlje se najčešće koristi kada se ne zna tačan broj izvšenja petlje. <br>
+        U slučaju da uslov na samom početku nije ispunjen, petlja se ne izvršava ni jednom. <br>
+        Pre ulaska u petlju vrši se inicijalizacija promenljivih koje će biti korišćene bilo u uslovu, <br>
+        bilo u telu petlje. U telu petlje se nalazu kod koji formira uslov za ostanak u petlji. <br>
+       </p>
+       <hr>
+       <h2 id="navigacija">Deklaracija funkcija</h2>
+       <p id="tekst">Deklaracija funkcija sastoji se od kljucne reci funkcije: </p>
+       <ul id="tekst">
+        <li>naziv funkcije</li>
+        <li>lista argumenata funkcije</li>
+        <li>JavaScript izjave koje definisu funkciju</li>
+       </ul>
+       <p id="tekst">Primer: <br>
+        function square(number) { return number * number; } <br>
+        Funkcija kvadrat uzima argument koji se zove broj, funkcija se sastoji od jedne <br>
+        izjave koja kaze da vrati argument funkcije pomnozen sam sa sobom. <br>
+        <hr>
+    
+    
+    </p>
+<script>
+      const nizNaslovi = ["Uvod","Sta vec treba da znate","Hello world","Promenljive/varijable","Deklarisanje varijabli",
+      "Opsek varijabli","Globalne varijable","Konstante","Tipovi podataka","if...else","while","Deklaracija funkcija"
+   ];
+
+    function noviCitat() {
+        let rnd = parseInt(Math.random()*nizNaslovi.length);
+        let paragraf = document.getElementById("quote");
+
+        paragraf.innerHTML = nizNaslovi[rnd];}
+
+    const myTimeout = setTimeout(myGreeting, 3000);
+    
+    function myGreeting() {
+     document.getElementById("navigacija").innerHTML = "JS Documentation"
+    }
+    </script>
+</body>
+</html>
